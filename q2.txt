@@ -1,0 +1,38 @@
+Gang Hyun Kim (Jason)
+
+a) How many orders were shipped by Speedy Express in total?
+
+SELECT count(OrderID) FROM Orders
+JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID
+WHERE ShipperName = "Speedy Express"
+GROUP BY ShipperName;
+
+In a large dataset, it is not realistic to find the ID of the shipper directly, so the query above is required.
+However, the following would be more efficient for this dataset:
+
+SELECT count(ShipperID) FROM Orders
+WHERE ShipperID = 1;
+
+
+b) What is the last name of the employee with the most orders?
+
+SELECT LastName FROM Employees
+WHERE EmployeeID = (SELECT EmployeeID FROM Orders
+                     GROUP BY EmployeeID
+                     ORDER BY count(OrderID) DESC
+                     LIMIT 1);
+
+M number of orders joined with N number of Employees can become a very large table.
+For an increase in performance in larger datasets, the employee with the most orders is found first before finding their last name.
+
+
+c) What product was ordered the most by customers in Germany?
+
+SELECT sum(OrderDetails.quantity), ProductName, Products.ProductID FROM Orders
+JOIN Customers ON Customers.CustomerID = Orders.CustomerID
+JOIN OrderDetails ON OrderDetails.OrderID = Orders.OrderID
+JOIN Products ON Products.ProductID = OrderDetails.ProductID
+WHERE customers.country = "Germany"
+GROUP BY ProductName
+ORDER BY sum(OrderDetails.quantity) DESC
+LIMIT 1;
