@@ -1,6 +1,7 @@
 # ShopifyDS
 
 ## Q2  
+### In depth explanation of my queries are in Question2/q2.txt  
 a) How many orders were shipped by Speedy Express in total?  
 ![a answer](/Question2/a.png)
   
