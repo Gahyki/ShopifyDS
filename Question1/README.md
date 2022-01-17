@@ -1,8 +1,8 @@
 ## Q1  
 ### Setup
 The first step is to be able to reproduce the naively calculated value.  
-This is achieved by importing the csv as a dataframe then calculating the mean of the order_amount column.
-![Naively calculated average code](/Question1/NaivelyCalculatedValueCode.png) 
+This is achieved by importing the csv as a dataframe then calculating the mean of the order_amount column.  
+![Naively calculated average code](/Question1/NaivelyCalculatedValueCode.png)  
 ![Naively calculated average](/Question1/NaivelyCalculatedValue.png)  
 Then the data is verified for NaN/None values.  
 Now the data is ready for further analysis.  
@@ -45,9 +45,10 @@ Here is a side by side comparison of the AOV with and without the high price ite
 ![AOV without high price items](/Question1/PostHighPriceAOV.png)  
   
 The following is the list of top ten most popular items in order of frequency:  
-![Popularity by order frequency code](/Question1/PopularityByOrderFrequencyCode.png)
+![Popularity by order frequency code](/Question1/PopularityByOrderFrequencyCode.png)  
 ![Popularity by order frequency](/Question1/PopularityByOrderFrequency.png)  
   
-and a graphical representation of the popularity of each item price (by order of frequency):
+and a graphical representation of the popularity of each item price (by order of frequency):  
 ![Popularity graph code](/Question1/PopularityGraphCode.png)  
 ![Popularity graph](/Question1/PopularityGraph.png)  
+
