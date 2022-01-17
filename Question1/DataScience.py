@@ -57,6 +57,8 @@ An interesting metric that could be extracted from this dataset is a list of the
 popular items. This will allow one to be able to identify which shop and product is the most
 well performing.
 '''
+cleaned_df.loc[:, 'item_price'].value_counts().head(10)
+
 print(cleaned_df.loc[:, 'item_price'].value_counts().head(10))
 print("The most popular item has the price of " +
       str(cleaned_df.loc[:, 'item_price'].value_counts().head(1).index[0]) +
