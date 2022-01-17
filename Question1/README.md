@@ -38,5 +38,5 @@ Here is a side by side comparison of the AOV with and without the high price ite
 ![AOV with high price items](/Question1/PostBulkAOV.png)  
 ![AOV without high price items](/Question1/PostHighPriceAOV.png)  
   
-The following is the list of top ten most popular items in order of frequency:
+The following is the list of top ten most popular items in order of frequency:  
 ![Popularity by order frequency](/Question1/PopularityByOrderFrequency.png)
