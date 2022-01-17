@@ -65,3 +65,6 @@ print("The most popular item has the price of " +
       " and has sold a total of " +
       str(cleaned_df.loc[:, 'item_price'].value_counts().iloc[0]) +
       " units.")
+
+plt.plot(cleaned_df.loc[:, 'item_price'].value_counts().sort_index())
+plt.show()

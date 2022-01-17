@@ -46,4 +46,8 @@ Here is a side by side comparison of the AOV with and without the high price ite
   
 The following is the list of top ten most popular items in order of frequency:  
 ![Popularity by order frequency code](/Question1/PopularityByOrderFrequencyCode.png)
-![Popularity by order frequency](/Question1/PopularityByOrderFrequency.png)
+![Popularity by order frequency](/Question1/PopularityByOrderFrequency.png)  
+  
+and a graphical representation of the popularity of each item price (by order of frequency):
+![Popularity graph code](/Question1/PopularityGraphCode.png)  
+![Popularity graph](/Question1/PopularityGraph.png)  
