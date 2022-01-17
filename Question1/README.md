@@ -1,7 +1,7 @@
 ## Q1  
 ### Setup
 The first step is to be able to reproduce the naively calculated value.  
-This is achieved by importing the csv as a dataframe then calculating the mean of the order_amount column.
+This is achieved by importing the csv as a dataframe then calculating the mean of the order_amount column.  
 ![Naively calculated average code](/Question1/NaivelyCalculatedValueCode.png)  
 ![Naively calculated average](/Question1/NaivelyCalculatedValue.png)  
 Then the data is verified for NaN/None values.  
